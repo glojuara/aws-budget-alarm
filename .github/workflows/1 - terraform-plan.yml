@@ -22,3 +22,10 @@ jobs:
         terraform init
         terraform validate
         terraform plan
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5.0.2
+      with:
+#        commit-message: update authors
+#        title: Update AUTHORS
+#        body: Credit new contributors by updating AUTHORS
+        branch: master
