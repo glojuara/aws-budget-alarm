@@ -25,6 +25,7 @@ jobs:
     
 
   create-pull-request:
+    name: Create Pull Request
     needs: terraform_plan
     runs-on: ubuntu-latest
     steps:
