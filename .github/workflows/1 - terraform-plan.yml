@@ -28,10 +28,12 @@ jobs:
     needs: terraform_plan
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4      
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "develop"
           github_token: ${{ secrets.PAT }}
-          pr_label: "feature, automated pr"
-          pr_title: "[Example] Simple demo"
+          pr_label: "Automated PR"
+          pr_title: "Auto-generated PR"
