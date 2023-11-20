@@ -1,6 +1,7 @@
 name: Terraform Plan
-on: push
-  branches:
+on: 
+  push:
+    branches:
       - feature/*
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
