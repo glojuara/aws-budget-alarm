@@ -28,4 +28,5 @@ jobs:
 #        commit-message: update authors
 #        title: Update AUTHORS
 #        body: Credit new contributors by updating AUTHORS
+        token: ${{ secrets.PAT }}
         branch: master
