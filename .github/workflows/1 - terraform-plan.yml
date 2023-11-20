@@ -30,7 +30,7 @@ jobs:
         committer: GitHub <noreply@github.com>
         author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
         signoff: false
-        base: master
+        branch: develop
         title: '[Example] Update report'
         body: |
           Update report
