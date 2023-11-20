@@ -1,7 +1,7 @@
 variable "subscriber_email_addresses" {
   description = "Lista de emails para receber as notificações de budget"
   type        = list(string)
-  default     = ["guilherme.xh@hotmail.com", "guilherme.xh@gmail.com", "aledias.navy@gmail.com"]
+  default     = ["guilherme.xh@hotmail.com", "guilherme.xh@gmail.com"]
 }
 
 variable "thresholds" {
